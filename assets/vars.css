@@ -1,5 +1,37 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
+@font-face {
+    font-family: 'luciole';
+    src: url('/assets/font/luciole/Luciole-Regular.woff2') format('woff2'),
+         url('/assets/font/luciole/Luciole-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'luciole';
+    src: url('/assets/font/luciole/Luciole-Bold.woff2') format('woff2'),
+         url('/assets/font/luciole/Luciole-Bold.ttf') format('ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'luciole';
+    src: url('/assets/font/luciole/Luciole-Italic.woff2') format('woff2'),
+         url('/assets/font/luciole/Luciole-Italic.ttf') format('ttf');
+    font-weight: italic;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'staatliches';
+    src: url('/assets/font/staatliches/staatliches-regular-webfont.woff2') format('woff2'),
+         url('/assets/font/staatliches/Staatliches-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root {
     --kouler-blan: #fff;
     --kouler-kari: #e9b322;
@@ -19,4 +51,8 @@
     --motif-reyone: center / cover url(motif/reyone.svg);
     --motif-sevronbraz: url(motif/sevronbraz.svg);
     --motif-sevronkler: url(motif/sevronkler.svg);
+
+    --h1: 42px 'staatliches' , sans-serif;
+    --txtcourant: 16px 'luciole', sans-serif;
+    --nav: 16px 'staatliches' , sans-serif;
 }

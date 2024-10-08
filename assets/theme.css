@@ -1,0 +1,168 @@
+@import url(./vars.css);
+
+body {
+    color: black;
+}
+
+li a {
+ text-decoration: none;
+}
+
+a {
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+li.nav-item {
+    display: flex;
+    align-items: center;
+}
+
+/* navbar */
+
+.navbar navbar bg-body-tertiary {
+    padding-top: 30px;
+    background: black;
+}
+nav.navbar.navbar.bg-black {
+    padding-top: 30px;
+}
+
+div#mainMenu {
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+/* header */
+
+header {
+    background-color: black;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.qsn a {
+    color: white;
+    padding-top: 20px;
+    font: var(--nav);
+}
+.qsn {
+    padding-top: 20px;
+}
+
+.rs {
+    padding-top: 20px;
+    background: black;
+}
+
+.img-thumbnail {
+    border: none;
+    border-radius: 0%;
+}
+.logo {
+    padding-top: none;
+}
+
+h1 {
+    color: white;
+    font: var(--h1);
+}
+
+
+/* menu burger */
+
+div#mainMenu {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 30%;
+    height: 100vh;
+    z-index: 10000;
+    padding: 40px;
+}
+
+a.nav-link.active {
+    padding-left: 20px;
+}
+/* a.nav-link {
+    padding-left: 20px;
+} */
+
+.ctgagenda::after{
+content: '→';
+padding-left: 20px;
+}
+
+li.sub-menu{
+    display: flex;
+    align-items: center;
+}
+li.sub-menu i {
+    padding-left: 20px;
+}
+ul.dropdown-menu.dropdown-menu-lg-end.show {
+    right: auto;
+}
+
+/* menu catégorie agenda */
+ul.sub-ctg li {
+    display: flex;
+    align-items: center;
+}
+ul .sub-ctg li i {
+padding-left: 20px;
+}
+ul.dropdown-menu.sub-ctg.show {
+    position: absolute;
+    margin-left: 33px;
+}
+
+
+/* navigation agenda */
+
+nav.nav-agenda {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+nav.d-flex.flex-row.mb-3.\>.\<ul.class\= {
+    justify-content: center;
+    margin-top: 47px;
+}
+
+.nav-a2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 78px 30px 78px;
+    font-size: 1.5rem;
+}
+
+.content::after {
+    content: "";
+    border: solid 1px black;
+    height: 70px;
+}
+
+.content2::before{
+    content: "";
+    border: solid 1px black;
+    height: 70px;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+}
+
+
+.a.col.fs-5.mb-3 {
+    font: var(--txtcourant);
+}
