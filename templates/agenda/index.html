@@ -14,7 +14,7 @@
   </div>
 
 
-  <div id="eventCarousel" class="carousel slide">
+  <!-- <div id="eventCarousel" class="carousel slide">
     <div class="carousel-inner" style="max-height: 33vh;">
       <div class="carousel-item active">
         <img style="background-color: var(--kouler-kari)" src="/assets/img/13-vent-img.jpg" class="d-block w-100 object-fit-fill"
@@ -26,6 +26,30 @@
       </div>
       <div class="carousel-item">
         <img style="background-color: var(--kouler-letsi)" src="/assets/img/pop-up-img.jpg" class="d-block w-100 object-fit-fill"
+          alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#eventCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#eventCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div> -->
+  <div id="eventCarousel" class="carousel slide mb-3">
+    <div class="carousel-inner" style="max-height: 50vh;">
+      <div class="carousel-item active d-flex justify-content-center gap-5">
+        <img style="background-color: var(--kouler-kari)" src="/assets/img/13-vent-img.jpg" class="d-inline-block "
+          alt="...">
+          <img style="background-color: var(--kouler-losean)" src="/assets/img/passopark-img.jpg" class="d-inline-block "
+          alt="...">
+      </div>
+      <div class="carousel-item d-flex justify-content-center gap-5">
+        <img style="background-color: var(--kouler-letsi)" src="/assets/img/pop-up-img.jpg" class="d-inline-block"
+          alt="...">
+          <img style="background-color: var(--kouler-piton)" src="/assets/img/nuits-du-chat.jpg" class="d-inline-block"
           alt="...">
       </div>
     </div>
@@ -61,25 +85,25 @@
     <div class="content">
       <li class="nav-item nav-a2">
       <i class="bi bi-stars"></i>
-      <a class="nav-link" href="">Spectacles</a>
+      <a class="nav-linka" href="">Spectacles</a>
     </li>
    </div>
    <div class="content">
     <li class="nav-item nav-a2">
       <i class="bi bi-camera-reels"></i>
-      <a class="nav-link" href="">Cinéma</a>
+      <a class="nav-linka" href="">Cinéma</a>
     </li class="nav-a2">
    </div>
     <div class="content">
       <li class="nav-item nav-a2">
       <i class="bi bi-heart"></i>
-      <a class="nav-link" href="">Associatif</a>
+      <a class="nav-linka" href="">Associatif</a>
     </li>
    </div>
    <div class="content">
     <li class="nav-item nav-a2">
       <i class="bi bi-music-note-list"></i>
-      <a class="nav-link" href="">Festival</a>
+      <a class="nav-linka" href="">Festival</a>
     </li>
    </div>
   </ul>
@@ -107,7 +131,6 @@
       </div>
       <button class="btn btn-outline-primary" id="inputGroup-sizing-lg" type="submit">
         <i class="bi bi-search"></i>
-        <i class="bi bi-moon-fill"></i>
       </button>
     </div>
   </form>
@@ -184,9 +207,11 @@
           Tarif solidaire
         </label>
       </div>
-      coucou
       <div class="position-absolute bottom-0 start-0 end-0 p-3 ">
         <a href="." class="btn btn-primary d-block">Valider</a>
+      </div>
+      <div class="position-absolute bottom-0 start-0 end-0 p-3 ">
+        <a href="." class="btn btn-primary d-block">Effacer</a>
       </div>
     </div>
   </div>
@@ -202,15 +227,16 @@
     }
   </style>
 
-  <h2 class="fs-5 p-3 text-dark" style="background: var(--mayaj-pons);">
+  <h2 class="fs-2 p-3 text-dark" style="background: var(--mayaj-pons);">
     Vendredi 20 septembre
   </h2>
   <div class="row align-items-center mb-3">
     <div class="col-auto text-center">
-      <h3>19h00</h3>
+      <h3 class="fs-5">19h00</h3>
       <p class="fs-5 badge bg-secondary-subtle mb-md-0">Gratuit</p>
     </div>
-    <a href="boeuf-lampions/" class="col fs-5 mb-3">
+    <img class="musicgender" src="/assets/img/punk.png" alt="">
+    <a href="boeuf-lampions/" class="col fs-4 fw-bold mb-3">
       Bœuf des Lampions
     </a>
     <div class="col-md-auto text-md-end event-tags">
@@ -228,10 +254,11 @@
   <hr />
   <div class="row align-items-center mb-3">
     <div class="col-auto text-center">
-      <h3>22h00</h3>
+      <h3 class="fs-5">22h00</h3>
       <p class="fs-5 badge bg-secondary-subtle mb-md-0">20/26€</p>
     </div>
-    <a href="see-you-in-the-pit-13/" class="col fs-5 mb-3">
+    <img class="musicgender" src="/assets/img/rock.png" alt="">
+    <a href="see-you-in-the-pit-13/" class="col fs-4 fw-bold mb-3">
       See You In The Pit #13: Sheer Terror / Warrior Kids
     </a>
     <div class="col-md-auto text-md-end event-tags">
@@ -244,15 +271,16 @@
       <a href="?accessibility=PMR" class="btn btn-info btn-sm mb-1">PMR</a>
     </div>
   </div>
-  <h2 class="fs-5 p-3 text-dark" style="background: var(--mayaj-pons);">
+  <h2 class="fs-2 p-3 text-dark" style="background: var(--mayaj-pons);">
     Vendredi 27 septembre
   </h2>
   <div class="row align-items-center mb-3">
     <div class="col-auto text-center">
-      <h3>19h00</h3>
+      <h3 class="fs-5">19h00</h3>
       <p class="fs-5 badge bg-secondary-subtle mb-md-0">Gratuit</p>
     </div>
-    <a href="boeuf-lampions/" class="col fs-5 mb-3">
+    <img class="musicgender" src="/assets/img/jazz.png" alt="">
+    <a href="boeuf-lampions/" class="col fs-4 fw-bold mb-3">
       Bœuf des Lampions
     </a>
     <div class="col-md-auto text-md-end event-tags">

@@ -15,14 +15,14 @@
     font-weight: bold;
     font-style: normal;
 }
-
+/* 
 @font-face {
     font-family: 'luciole';
     src: url('/assets/font/luciole/Luciole-Italic.woff2') format('woff2'),
          url('/assets/font/luciole/Luciole-Italic.ttf') format('ttf');
     font-weight: italic;
-    font-style: normal;
-}
+    font-style: normal; */
+/* } */
 
 @font-face {
     font-family: 'staatliches';
@@ -34,11 +34,11 @@
 
 :root {
     --kouler-blan: #fff;
-    --kouler-kari: #e9b322;
-    --kouler-losean: #4296cc;
-    --kouler-letsi: #e93363;
+    --kouler-kari: #F6CD00;
+    --kouler-losean: #1B9ECE;
+    --kouler-letsi: #E50064;
     --kouler-nwar: #000;
-    --kouler-piton: #63515e;
+    --kouler-piton: #3055A3;
     --kouler-pitonbraz: #291e26;
     --kouler-pitonkler: #958c92;
     --kouler-sousou: #259d49;
@@ -53,6 +53,7 @@
     --motif-sevronkler: url(motif/sevronkler.svg);
 
     --h1: 42px 'staatliches' , sans-serif;
+    --h2: 32px 'luciole', sans-serif;
     --txtcourant: 16px 'luciole', sans-serif;
     --nav: 16px 'staatliches' , sans-serif;
 }

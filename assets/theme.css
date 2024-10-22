@@ -2,6 +2,7 @@
 
 body {
     color: black;
+    font-family: luciole, sans serif;
 }
 
 li a {
@@ -33,6 +34,10 @@ nav.navbar.navbar.bg-black {
 div#mainMenu {
     padding: 1rem;
     margin-top: 1rem;
+}
+
+i.bi {
+    font-size: 25px;
 }
 
 /* header */
@@ -87,12 +92,10 @@ div#mainMenu {
     padding: 40px;
 }
 
-a.nav-link.active {
+a.nav-link {
     padding-left: 20px;
+    font-size: 18px;
 }
-/* a.nav-link {
-    padding-left: 20px;
-} */
 
 .ctgagenda::after{
 content: '→';
@@ -142,6 +145,7 @@ nav.d-flex.flex-row.mb-3.\>.\<ul.class\= {
     flex-direction: column;
     align-items: center;
     padding: 30px 78px 30px 78px;
+    font-family: staatliches, sans-serif;
     font-size: 1.5rem;
 }
 
@@ -165,4 +169,55 @@ nav.d-flex.flex-row.mb-3.\>.\<ul.class\= {
 
 .a.col.fs-5.mb-3 {
     font: var(--txtcourant);
+}
+
+/* Agenda */
+
+h2 {
+    margin: 0;
+    font: var(--h2);
+    font-weight: bold;
+}
+
+h3 {
+    color: white;
+    background-color: black;
+    padding: 20px;
+}
+
+img.musicgender {
+    width: 10%;
+}
+
+.btn-info {
+    background-color: var(--kouler-letsi);
+    color: white;
+    border: var(--kouler-letsi);
+}
+
+.btn-info:hover {
+    background-color: var(--kouler-letsi);
+    color: white;
+    border: var(--kouler-letsi);
+}
+
+
+
+
+/* footer */
+
+footer a.nav-link, footer a, h4 {
+    color: white;
+}
+footer p {
+    color: white;
+}
+
+
+
+
+/* page event free */
+
+li i.bi {
+    color: var(--kouler-letsi);
 }
