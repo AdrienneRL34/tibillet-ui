@@ -24,79 +24,40 @@
       <a class="navbar-brand flex-grow-1" href="$base_url/">
         Le Tiers-Lustre
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu"
-        aria-controls="mainMenu" aria-expanded="false" aria-label="Ouvrir le menu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="mainMenu">
-        <ul class="navbar-nav me-auto">
-          <!-- <li class="nav-item">
-            <a class="nav-link $tenant_link" href="$base_url/">
-              Accueil
-            </a>
-          </li> -->
-          <li class="nav-item">
-            <a class="nav-link $agenda_link" href="$base_url/agenda/">
-              <i class="bi bi-calendar-date"></i>
-              Agenda
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link $subscribe_link" href="$base_url/adherer/">
-              <i class="bi bi-person-badge"></i>
-              Adhérer
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link $network_link" href="$base_url/reseau/">
-              <i class="bi bi-arrow-repeat"></i>
-              Réseau local
-            </a>
-          </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link" href=".">
-              <i class="bi bi-balloon-heart"></i>
-              Appels à volontaires
-            </a>
-          </li> -->
-          <li class="nav-item">
-            <a class="nav-link" href=".">
-              <i class="bi bi-question-lg"></i>
-              Aide et contact
-            </a>
-          </li>
-        </ul>
-        <div class="navbar-nav d-flex mb-0">
-          <div class="nav-item">
-              <a class="nav-link $piggybank_link" href="$base_url/compte/">
-                <i class="bi bi-person-circle"></i>
-                Mon compte
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </nav>
 
-  <!-- encart mamasound -->
-  <div class="bg-black">
-    <img class="img-fluid" src="/assets/img/logo-mamasound-blanc-bis.png" alt="">
-    <div class="container-lg">
-      <h1 class="d-flex text-white d-flex justify-content-center">L'agenda musical à votre portée !</h1>
-         <div class="grid gap-3 d-flex justify-content-center">
-            <img class="p-2 g-col-6" src="/assets/img/rs/facebook.svg" alt="">
-            <img class="p-2 g-col-6" src="/assets/img/rs/insta.svg" alt="">
-            <img class="p-2 g-col-6" src="/assets/img/rs/youtube.svg" alt="">
-         </div>
-         <li>
-          <a href="">Qui sommes-nous</a>
-        </li>
-    </div>
-  </div>
-
   <div class="flex-fill">
-    $page_content
+    <div class="container-lg py-5">
+      <div class="row">
+        <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4">
+          <h1>Associer ma carte</h1>
+          <p>
+            Pour utiliser mon compte en ligne, recharger ma carte et pouvoir
+            récupérer mon crédit en cas de perte de la carte, j'associe une
+            adresse email à ma carte.
+          </p>
+          <div class="form-floating mb-3">
+            <input name="email" type="email" class="form-control" placeholder="adresse@exemple.fr" role="textbox" aria-label="Adresse mail de l'adhéranne" required>
+            <label for="email">Addresse mail</label>
+          </div>
+
+          <div class="form-check form-switch mb-3">
+            <input class="form-check-input" type="checkbox" role="switch" id="emailCheck">
+            <label class="form-check-label" for="emailCheck">
+                Je veux recevoir la newsletter TiBillet
+            </label>
+          </div>
+          <div class="form-check form-switch mb-3">
+            <input class="form-check-input" type="checkbox" role="switch" id="termsCheck" required>
+            <label class="form-check-label" for="termsCheck">
+                J'accepte <a href="#">les CGU / CGV</a>
+            </label>
+          </div>
+          <a href="$base_url/compte/carte/" class="btn btn-primary d-block mb-3">Confirmer</a>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- footor -->
@@ -132,12 +93,6 @@
             </li> -->
             <li class="nav-item">
               <a class="nav-link" href=".">Aide et contact</a>
-            </li>
-          </ul>
-          <hr>
-          <ul class="nav">
-            <li class="nav-item">
-              <a class="nav-link $piggybank_link" href="$base_url/compte/">Mon compte</a>
             </li>
           </ul>
         </div>
