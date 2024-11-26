@@ -23,6 +23,9 @@ h1 {
     font-size: calc(62px + (72 - 62) * ((100vw - 576px) / (1200 - 576)));
 }
 
+h2{
+    font-weight: 600;
+}
 /* a {
     text-decoration:none;
 } */
@@ -33,7 +36,7 @@ li {
 
 /******************** PAGE ACCUEIL ************************/
 
-
+  
 /* Nav */
 
 .LogoMama{
@@ -104,6 +107,26 @@ li {
 
 /******************** PAGE AGENDA ************************/
 
+
+/* filtre catÃ©gorie agenda */
+ul.sub-ctg li {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+ul .sub-ctg li i {
+padding-left: 20px;
+}
+
+
+@media (max-width: 900px) {
+    .custom-img {
+      width: 1300px !important; /* Remet la largeur de l'image à sa taille originale */
+      max-width: none !important; /* Supprime la limitation de largeur */
+      height: auto; /* Garde les proportions originales */
+    }
+  }
+  
 .h3{
     color: white;
     background-color: black;
@@ -155,6 +178,9 @@ nav.nav-agenda {
 nav.d-flex.flex-row.mb-3.\>.\<ul.class\= {
     justify-content: center;
     margin-top: 47px;
+}
+.nav-linka {
+    text-decoration: none;
 }
 
 .nav-a2 {
