@@ -1,10 +1,18 @@
+@font-face {
+    font-family: 'luciole';
+    src: url('/assets/font/luciole/Luciole-Regular.woff2') format('woff2'),
+         url('/assets/font/luciole/Luciole-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root {
     --mama-jaune: #F6CD00;
     --mama-cyan: #1B9ECE;
     --mama-rose: #E50064;
     --mama-bleu: #3055A3;
 
-    --h1: 52px 'staatliches' , sans-serif;
+    --h1: 72px 'staatliches' , sans-serif;
     --h2: 32px 'luciole', sans-serif;
     --txtcourant: 16px 'luciole', sans-serif;
     --nav: 20px 'staatliches' , sans-serif;
@@ -12,4 +20,170 @@
 
 h1 {
     font: var(--h1);
+    font-size: calc(62px + (72 - 62) * ((100vw - 576px) / (1200 - 576)));
+}
+
+/* a {
+    text-decoration:none;
+} */
+
+li {
+    list-style: none;
+}
+
+/******************** PAGE ACCUEIL ************************/
+
+
+/* Nav */
+
+.LogoMama{
+    width: 150px;
+}
+
+/* Bouton lien */
+
+.btn-custom-line {
+    font-family: 'luciole' sans-serif;
+    font-size: 24px;
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: regular;
+    color: #000;
+    background-color: #fff;
+    border: solid linear-gradient(90deg, var(--mama-jaune), var(--mama-rose));
+    border-width: 6px;
+    border-radius: 50px;
+    background-image: white;
+    background-clip: padding-box;
+
+}
+.btn-custom-line::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: inherit;
+    background: linear-gradient(90deg, var(--mama-jaune), var(--mama-rose));
+    z-index: -1;
+}
+
+.btn-custom-solid {
+    font-family: 'luciole' sans-serif;
+    font-size: 24px;
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: regular;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 50px;
+    background-image: linear-gradient(90deg, var(--mama-jaune), var(--mama-rose));
+    background-clip: padding-box;
+}
+.btn-custom-solid:hover {
+    color: white;
+}
+.btn-custom-solid::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: inherit;
+    background: linear-gradient(90deg, var(--mama-jaune), var(--mama-rose));
+    z-index: -1;
+}
+
+
+/******************** PAGE AGENDA ************************/
+
+.h3{
+    color: white;
+    background-color: black;
+    padding: 20px;
+}
+
+/* bouton carrousel */
+
+.carousel-control-prev, .carousel-control-next {
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.custom-control {
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-icon {
+    filter: invert(100%);
+}
+
+.carousel-control-prev-icon::before {
+    transform: rotate(135deg);
+}
+
+.carousel-control-next-icon::before {
+    transform: rotate(-45deg);
+}
+
+
+/* navigation agenda */
+
+
+
+nav.nav-agenda {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+nav.d-flex.flex-row.mb-3.\>.\<ul.class\= {
+    justify-content: center;
+    margin-top: 47px;
+}
+
+.nav-a2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 78px 30px 78px;
+    font-family: staatliches, sans-serif;
+    font-size: 1.5rem;
+}
+
+.content::after {
+    content: "";
+    border: solid 1px black;
+    height: 70px;
+}
+
+.content2::before{
+    content: "";
+    border: solid 1px black;
+    height: 70px;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+}
+
+
+.a.col.fs-5.mb-3 {
+    font: var(--txtcourant);
 }
